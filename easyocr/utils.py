@@ -669,6 +669,6 @@ def reformat_input(image):
             img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
             img_cv_grey = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     else:
-        LOGGER.warning('Invalid input type. Suppoting format = string(file path or url), bytes, numpy array')
+        print('Invalid input type. Suppoting format = string(file path or url), bytes, numpy array')
 
     return img, img_cv_grey
